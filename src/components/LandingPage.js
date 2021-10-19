@@ -18,7 +18,9 @@ export default function LandingPage() {
                     </StyledAmountOfTravelersTitle>
                     <StyledAmountOfTravelers placeholder='1' />
                 </StyledAmountOfTravelersContainer>
-                <StyledNextButton exact to='/flight-search'><Link to="/flight-search">Next</Link></StyledNextButton>
+                <StyledNextButton>
+                    <Link to="/flight-search">Next</Link>
+                </StyledNextButton>
             </StyledNavBar>
             <StyledGreenJetReminder>
                 <h5>
@@ -37,8 +39,9 @@ const StyledLandingPageWrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #B5E48C;
-    height: 100vh;
+    background: rgba(181, 228, 140, 0.3);
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0px 3px 10px grey;
 `
 
 const StyledNavBar = styled.div`
@@ -49,7 +52,7 @@ const StyledNavBar = styled.div`
     justify-content: center;
     align-items: center;
     border-radius: 0 0 15px 15px;
-    box-shadow: 0px 1px 10px;
+    box-shadow: 0px 3px 10px grey;
     z-index: 10;
 `
 
@@ -86,7 +89,7 @@ const StyledInputTo = styled.input`
 `
 
 const StyledAmountOfTravelersContainer = styled.div`
-    width: 210px;
+    width: 75vw;
 `
 
 const StyledAmountOfTravelersTitle = styled.div`
@@ -128,4 +131,5 @@ const StyledGreenJetReminder = styled.p`
     max-width: 340px;
     background: #B5E48C;
     font-size: 16px;
+    padding: 0 0 20px 0;
 `
