@@ -129,7 +129,7 @@ const StyledNextButton = styled.button`
 
 const StyledGreenJetReminder = styled.p`
     max-width: 340px;
-    background: #B5E48C;
+    background: rgba(181, 228, 140, 0);
     font-size: 16px;
     padding: 0 0 20px 0;
 `

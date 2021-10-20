@@ -5,12 +5,10 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import LandingPage from './components/LandingPage'
 import FlightSearch from './components/FlightSearch'
 import FlightTicket from './components/FlightTicket'
+import ChosenOption from './components/ChosenOption'
 
 
 function App() {
-
-  const [currentPage, setCurrentPage] = useState('')
-  console.log('currentpage ---  ', currentPage)
 
   return (
     <>
@@ -24,6 +22,9 @@ function App() {
           </Route>
           <Route path="/flight-ticket">
             <FlightTicket />
+          </Route>
+          <Route path="/chosen-option">
+            <ChosenOption />
           </Route>
         </Switch>
       </Router>

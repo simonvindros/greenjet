@@ -2,6 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
+import saslogo from '../assets/saslogo.jpg'
+
 export default function FlightTicket() {
     return (
         <StyledFlightTicketWrapper>
@@ -75,8 +77,111 @@ export default function FlightTicket() {
                 </StyledCompareInDate>
             </StyledCompareDateWrapper>
             <StyledTicketOptionWrapper>
+                <StyledLink exact to="chosen-option">
+                    <StyledTicket>
+                        <StyledTicketRowWrapper>
+                            <StyledTicketFirstRow>
+                                <StyledTicketFirstRowOne>
+                                    <img src={saslogo} /><p>ARN - CPH</p>
+                                </StyledTicketFirstRowOne>
+                                <StyledTicketFirstRowTwo>
+                                    <p>07:00 - 08:00 (1 Hour)</p>
+                                    <p>No stopovers</p>
+                                </StyledTicketFirstRowTwo>
+                            </StyledTicketFirstRow>
+                            <StyledTicketSecondRow>
+                                <StyledTicketSecondRowOne>
+                                    <img src={saslogo} />
+                                    <p>CPH - ARN</p>
+                                </StyledTicketSecondRowOne>
+                                <StyledTicketSecondRowTwo>
+                                    <p>07:00 - 08:00 (1 Hour)</p>
+                                    <p>No stopovers</p>
+                                </StyledTicketSecondRowTwo>
+                            </StyledTicketSecondRow>
+                        </StyledTicketRowWrapper>
+                        <StyledTicketPriceBox>
+                            <p>2000 : -</p>
+                        </StyledTicketPriceBox>
+                    </StyledTicket>
+                </StyledLink>
                 <StyledTicket>
-
+                    <StyledTicketRowWrapper>
+                        <StyledTicketFirstRow>
+                            <StyledTicketFirstRowOne>
+                                <img src={saslogo} /><p>ARN - MMX - CPH</p>
+                            </StyledTicketFirstRowOne>
+                            <StyledTicketFirstRowTwo>
+                                <p>07:00 - 08:00 (1 Hour)</p>
+                                <p>1 Stop (Malmö)</p>
+                            </StyledTicketFirstRowTwo>
+                        </StyledTicketFirstRow>
+                        <StyledTicketSecondRow>
+                            <StyledTicketSecondRowOne>
+                                <img src={saslogo} />
+                                <p>CPH - MMX - ARN</p>
+                            </StyledTicketSecondRowOne>
+                            <StyledTicketSecondRowTwo>
+                                <p>07:00 - 08:00 (1 Hour)</p>
+                                <p>1 Stop (Malmö)</p>
+                            </StyledTicketSecondRowTwo>
+                        </StyledTicketSecondRow>
+                    </StyledTicketRowWrapper>
+                    <StyledTicketPriceBox>
+                        <p>1500 : -</p>
+                    </StyledTicketPriceBox>
+                </StyledTicket>
+                <StyledTicket>
+                    <StyledTicketRowWrapper>
+                        <StyledTicketFirstRow>
+                            <StyledTicketFirstRowOne>
+                                <img src={saslogo} /><p>ARN - CPH</p>
+                            </StyledTicketFirstRowOne>
+                            <StyledTicketFirstRowTwo>
+                                <p>15:00 - 16:00 (1 Hour)</p>
+                                <p>No stopovers</p>
+                            </StyledTicketFirstRowTwo>
+                        </StyledTicketFirstRow>
+                        <StyledTicketSecondRow>
+                            <StyledTicketSecondRowOne>
+                                <img src={saslogo} />
+                                <p>CPH - ARN</p>
+                            </StyledTicketSecondRowOne>
+                            <StyledTicketSecondRowTwo>
+                                <p>15:00 - 16:00 (1 Hour)</p>
+                                <p>No stopovers</p>
+                            </StyledTicketSecondRowTwo>
+                        </StyledTicketSecondRow>
+                    </StyledTicketRowWrapper>
+                    <StyledTicketPriceBox>
+                        <p>2000 : -</p>
+                    </StyledTicketPriceBox>
+                </StyledTicket>
+                <StyledTicket>
+                    <StyledTicketRowWrapper>
+                        <StyledTicketFirstRow>
+                            <StyledTicketFirstRowOne>
+                                <img src={saslogo} /><p>ARN - MMX - CPH</p>
+                            </StyledTicketFirstRowOne>
+                            <StyledTicketFirstRowTwo>
+                                <p>15:00 - 16:00 (1 Hour)</p>
+                                <p>1 Stop (Malmö)</p>
+                            </StyledTicketFirstRowTwo>
+                        </StyledTicketFirstRow>
+                        <StyledTicketSecondRow>
+                            <StyledTicketSecondRowOne>
+                                <img src={saslogo} />
+                                <p>CPH - MMX - ARN</p>
+                            </StyledTicketSecondRowOne>
+                            <StyledTicketSecondRowTwo>
+                                <p>15:00 - 16:00 (1 Hour)</p>
+                                <p>1 Stop (Malmö)</p>
+                            </StyledTicketSecondRowTwo>
+                        </StyledTicketSecondRow>
+                    </StyledTicketRowWrapper>
+                    <StyledTicketPriceBox>
+                        <p>1500 : -</p>
+                    </StyledTicketPriceBox>
                 </StyledTicket>
             </StyledTicketOptionWrapper>
         </StyledFlightTicketWrapper>
@@ -108,10 +213,16 @@ const StyledNavBar = styled.div`
         color: white;
         font-wieght: bold;
         padding-left: 15px;
+        margin-block-start: 0;
+        margin-block-end: 0;
     }
     > p {
+        margin-left: -15px;
         flex-grow: 1;
         color: #128DA1;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        font-size: 20px;
     }
 `
 
@@ -131,23 +242,27 @@ const StyledPageIndicator = styled.div`
     background-color: #39B7D4;
     opacity: 0.5;
     height: 10px;
-    width: 20px;
-    border-radius: 4px;
+    width: 6vw;
+    border-radius: 2px;
 `
 
 const StyledCompareTitles = styled.div`
     display: flex;
-    width: 85vw;
+    width: 86vw;
     flex-direction: row;
-    justify-content: space-between;
-    padding: 0 0 0 5px;
+    justify-content: space-around;
     color: #89DDC3;
+        > p {
+        margin-block-start: 0;
+        margin-block-end: 0;
+        font-size: 16px;
+    }
 `
 
 const StyledCompareDateWrapper = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 85vw;
     padding: 25px 0 0 5px;
 `
@@ -157,7 +272,7 @@ const StyledCompareOutDate = styled.div`
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 30vw;
+    width: 35vw;
 `
 
 const StyledCompareOutDateOne = styled.div`
@@ -221,7 +336,7 @@ const StyledCompareInDate = styled.div`
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 30vw;
+    width: 35vw;
 `
 
 const StyledCompareInDateOne = styled.div`
@@ -281,18 +396,142 @@ const StyledCompareInDateFive = styled.div`
 `
 
 const StyledTicketOptionWrapper = styled.div`
-
+    display: flex;
+    width: 85vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @media (min-width: 740px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
 `
 
 const StyledTicket = styled.div`
-    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 85vw;
+    background: white;
+    border: 2px solid #128DA1;
+    border-radius: 10px;
+    padding: 4px;
+    margin-bottom: 10px;
+    @media (max-width: 310px) {
+        flex-direction: column;
+    }
+    @media (min-width: 740px) {
+        width: 40vw;
+    }
+    @media (min-width: 960px) {
+        width: 35vw;
+    }
+`
+
+const StyledTicketRowWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    flex-grow: 9;
 `
 
 const StyledTicketFirstRow = styled.div`
+    display: flex;
+    flex-direction: row;
+`
 
+const StyledTicketFirstRowOne = styled.div`
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    width: 40%;
+    border-bottom: solid 1px black;
+    > img {
+        width: 20px;
+        height: 20px;
+    }
+    > p {
+        margin-block-start: 0;
+        margin-block-end: 0;
+        font-size: 12px;
+        color: #39B7D4;
+    }
+`
+
+const StyledTicketFirstRowTwo = styled.div`
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: end;
+    width: 60%;
+    border-bottom: solid 1px black;
+    > p {
+        font-size: 12px;
+        margin-block-start: 0;
+        margin-block-end: 0;
+    }
 `
 
 const StyledTicketSecondRow = styled.div`
-
+    display: flex;
+    flex-direction: row;
+    max-height: 50px;
+    margin-top: 4px;
 `
 
+const StyledTicketSecondRowOne = styled.div`
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    width: 40%;
+    > img {
+        width: 20px;
+        height: 20px;
+    }
+    > p {
+        font-size: 12px;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        color: #39B7D4;
+    }
+`
+
+const StyledTicketSecondRowTwo = styled.div`
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: end;
+    width: 60%;
+    > p {
+        font-size: 12px;
+        margin-block-start: 0;
+        margin-block-end: 0;
+    }
+`
+
+const StyledTicketPriceBox = styled.div`
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0.5;
+    border-radius: 0 10px 10px 0;
+    justify-content: end;
+    align-items: center;
+    > p {
+        margin-block-start: 0;
+        margin-block-end: 0;
+        font-size: 14px;
+        color: #39B7D4;
+    }
+    @media (max-width: 310px) {
+        flex-direction: row;
+        flex-grow: 1;
+    }
+`
+
+const StyledLink = styled(Link)`
+    text-decoration: none;
+`

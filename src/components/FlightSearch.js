@@ -115,14 +115,15 @@ const StyledPageIndicator = styled.div`
     background-color: #39B7D4;
     opacity: 0.5;
     height: 10px;
-    width: 20px;
-    border-radius: 4px;
+    width: 6vw;
+    border-radius: 2px;
 `
 
 const StyledCalendarWrapper = styled.div`
     padding: 0 0 20px 0;
     .react-calendar {
-        background: #B5E48C;
+        width: 85vw; 
+        background: rgba(181, 228, 140, 0);
         border: none;
     }
     .react-calendar__navigation {
