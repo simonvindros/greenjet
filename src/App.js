@@ -6,6 +6,7 @@ import LandingPage from './components/LandingPage'
 import FlightSearch from './components/FlightSearch'
 import FlightTicket from './components/FlightTicket'
 import ChosenOption from './components/ChosenOption'
+import TravelProfile from './components/TravelProfile'
 
 
 function App() {
@@ -25,6 +26,9 @@ function App() {
           </Route>
           <Route path="/chosen-option">
             <ChosenOption />
+          </Route>
+          <Route path="/travel-profile">
+            <TravelProfile />
           </Route>
         </Switch>
       </Router>

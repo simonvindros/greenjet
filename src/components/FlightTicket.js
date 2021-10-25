@@ -190,6 +190,7 @@ export default function FlightTicket() {
 
 const StyledFlightTicketWrapper = styled.div`
     display: flex;
+    max-width: 800px;
     flex-direction: column;
     align-items: center;
     background: rgba(181, 228, 140, 0.3);
@@ -199,6 +200,7 @@ const StyledFlightTicketWrapper = styled.div`
 
 const StyledNavBar = styled.div`
     width: 100vw;
+    max-width: 800px;
     background: #39B7D4;
     display: flex;
     flex-direction: row;
@@ -217,18 +219,20 @@ const StyledNavBar = styled.div`
         margin-block-end: 0;
     }
     > p {
-        margin-left: -15px;
+        margin-left: -20px;
         flex-grow: 1;
         color: #128DA1;
         margin-block-start: 0;
         margin-block-end: 0;
         font-size: 20px;
+        padding: 10px 0 10px 0;
     }
 `
 
 const StyledPageIndicatorWrapper = styled.div`
     margin: 20px 0 0 0;
     display: flex;
+    max-width: 600px;
     flex-direction: row;
     justify-content: space-between;
     width: 75vw;
@@ -243,12 +247,14 @@ const StyledPageIndicator = styled.div`
     opacity: 0.5;
     height: 10px;
     width: 6vw;
+    max-width: 20px;
     border-radius: 2px;
 `
 
 const StyledCompareTitles = styled.div`
     display: flex;
-    width: 86vw;
+    width: 85vw;
+    max-width: 680px;
     flex-direction: row;
     justify-content: space-around;
     color: #89DDC3;
@@ -264,6 +270,7 @@ const StyledCompareDateWrapper = styled.div`
     flex-direction: row;
     justify-content: space-around;
     width: 85vw;
+    max-width: 680px;
     padding: 25px 0 0 5px;
 `
 
@@ -273,6 +280,7 @@ const StyledCompareOutDate = styled.div`
     flex-wrap: wrap;
     justify-content: space-between;
     width: 35vw;
+    max-width: 280px;
 `
 
 const StyledCompareOutDateOne = styled.div`
@@ -282,6 +290,7 @@ const StyledCompareOutDateOne = styled.div`
     justify-content: center;
     > div {
         width: 2vw;
+        max-width: 32px;
         height: 50px;
         background: linear-gradient(180deg, rgba(181, 228, 140, 0) 50%,rgba(181, 228, 140, 1) 50%);
     }
@@ -293,6 +302,7 @@ const StyledCompareOutDateTwo = styled.div`
     justify-content: center;
     > div {
         width: 2vw;
+        max-width: 32px;
         height: 50px;
         background: linear-gradient(180deg, rgba(181, 228, 140, 0) 0%,rgba(181, 228, 140, 1) 1%);
     }
@@ -304,6 +314,7 @@ const StyledCompareOutDateThree = styled.div`
     justify-content: center;
     > div {
         width: 2vw;
+        max-width: 32px;
         height: 50px;
         background: linear-gradient(180deg, rgba(137, 221, 195, 0) 25%,rgba(137, 221, 195, 1) 25%);
     }
@@ -315,6 +326,7 @@ const StyledCompareOutDateFour = styled.div`
     justify-content: center;
     > div {
         width: 2vw;
+        max-width: 32px;
         height: 50px;
         background: linear-gradient(180deg, rgba(181, 228, 140, 0) 50%,rgba(181, 228, 140, 1) 50%);
     }
@@ -326,6 +338,7 @@ const StyledCompareOutDateFive = styled.div`
     justify-content: center;
     > div {
         width: 2vw;
+        max-width: 32px;
         height: 50px;
         background: linear-gradient(180deg, rgba(181, 228, 140, 0) 25%,rgba(181, 228, 140, 1) 25%);
     }
@@ -337,6 +350,7 @@ const StyledCompareInDate = styled.div`
     flex-wrap: wrap;
     justify-content: space-between;
     width: 35vw;
+    max-width: 280px;
 `
 
 const StyledCompareInDateOne = styled.div`
@@ -346,6 +360,7 @@ const StyledCompareInDateOne = styled.div`
     justify-content: center;
     > div {
         width: 2vw;
+        max-width: 32px;
         height: 50px;
         background: linear-gradient(180deg, rgba(181, 228, 140, 0) 0%,rgba(181, 228, 140, 1) 1%);
     }
@@ -357,6 +372,7 @@ const StyledCompareInDateTwo = styled.div`
     justify-content: center;
     > div {
         width: 2vw;
+        max-width: 32px;
         height: 50px;
         background: linear-gradient(180deg, rgba(181, 228, 140, 0) 25%,rgba(181, 228, 140, 1) 25%);
     }
@@ -368,6 +384,7 @@ const StyledCompareInDateThree = styled.div`
     justify-content: center;
     > div {
         width: 2vw;
+        max-width: 32px;
         height: 50px;
         background: linear-gradient(180deg, rgba(137, 221, 195, 0) 50%,rgba(137, 221, 195, 1) 50%);
     }
@@ -379,6 +396,7 @@ const StyledCompareInDateFour = styled.div`
     justify-content: center;
     > div {
         width: 2vw;
+        max-width: 32px;
         height: 50px;
         background: linear-gradient(180deg, rgba(181, 228, 140, 0) 25%,rgba(181, 228, 140, 1) 25%);
     }
@@ -390,6 +408,7 @@ const StyledCompareInDateFive = styled.div`
     justify-content: center;
     > div {
         width: 2vw;
+        max-width: 32px;
         height: 50px;
         background: linear-gradient(180deg, rgba(181, 228, 140, 0) 0%,rgba(181, 228, 140, 1) 1%);
     }
@@ -398,6 +417,7 @@ const StyledCompareInDateFive = styled.div`
 const StyledTicketOptionWrapper = styled.div`
     display: flex;
     width: 85vw;
+    max-width: 680px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -413,6 +433,7 @@ const StyledTicket = styled.div`
     flex-wrap: wrap;
     flex-direction: row;
     width: 85vw;
+    max-width: 680px;
     background: white;
     border: 2px solid #128DA1;
     border-radius: 10px;
@@ -423,9 +444,7 @@ const StyledTicket = styled.div`
     }
     @media (min-width: 740px) {
         width: 40vw;
-    }
-    @media (min-width: 960px) {
-        width: 35vw;
+        max-width: 316px;
     }
 `
 

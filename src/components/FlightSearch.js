@@ -43,6 +43,7 @@ export default function FlightSearch() {
 }
 
 const StyledFlightSearchWrapper = styled.div`
+    max-width: 800px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,6 +54,7 @@ const StyledFlightSearchWrapper = styled.div`
 
 const StyledNavBar = styled.div`
     width: 100vw;
+    max-width: 800px;
     background: #39B7D4;
     display: flex;
     flex-direction: column;
@@ -66,6 +68,8 @@ const StyledNavBar = styled.div`
 
 const StyledBackWrapper = styled.div`
     width: 100vw;
+    margin-bottom: 4px;
+    max-width: 800px;
     > span > a {
         text-decoration: none;
         color: #FFFFFF;
@@ -75,6 +79,7 @@ const StyledBackWrapper = styled.div`
 
 const StyledInputFrom = styled.input`
     width: 75vw;
+    max-width: 600px;
     background: #128DA1;
     border: none;
     margin: 0 0 20px 0;
@@ -88,6 +93,7 @@ const StyledInputFrom = styled.input`
 
 const StyledInputTo = styled.input`
     width: 75vw;
+    max-width: 600px;
     background: #128DA1;
     border: none;
     margin: 0 0 10px 0;
@@ -105,6 +111,7 @@ const StyledPageIndicatorWrapper = styled.div`
     flex-direction: row;
     justify-content: space-between;
     width: 75vw;
+    max-width: 600px;
     padding: 20px;
     > div:nth-child(2) {
         opacity: 1;
@@ -116,13 +123,15 @@ const StyledPageIndicator = styled.div`
     opacity: 0.5;
     height: 10px;
     width: 6vw;
+    max-width: 20px;
     border-radius: 2px;
 `
 
 const StyledCalendarWrapper = styled.div`
     padding: 0 0 20px 0;
     .react-calendar {
-        width: 85vw; 
+        width: 85vw;
+        max-width: 680px;
         background: rgba(181, 228, 140, 0);
         border: none;
     }
@@ -144,7 +153,7 @@ const StyledCalendarWrapper = styled.div`
 
 const StyledNextButton = styled.button`
     width: 130px;
-    background-color: #89DDC3;
+    background-color: #B5E48C;
     border: none;
     margin: 0 0 10px 0;
     color: black;

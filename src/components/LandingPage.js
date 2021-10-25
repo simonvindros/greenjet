@@ -14,7 +14,9 @@ export default function LandingPage() {
                 <StyledInputTo placeholder='To' />
                 <StyledAmountOfTravelersContainer>
                     <StyledAmountOfTravelersTitle>
-                        Amount of Travelers:
+                        <h5>
+                            Amount of Travelers:
+                        </h5>
                     </StyledAmountOfTravelersTitle>
                     <StyledAmountOfTravelers placeholder='1' />
                 </StyledAmountOfTravelersContainer>
@@ -36,6 +38,7 @@ export default function LandingPage() {
 }
 
 const StyledLandingPageWrapper = styled.div`
+    max-width: 800px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,6 +49,7 @@ const StyledLandingPageWrapper = styled.div`
 
 const StyledNavBar = styled.div`
     width: 100vw;
+    max-width: 800px;
     background: #39B7D4;
     display: flex;
     flex-direction: column;
@@ -64,6 +68,7 @@ const StyledJetGreenLogo = styled.img`
 
 const StyledInputFrom = styled.input`
     width: 75vw;
+    max-width: 600px;
     background: #128DA1;
     border: none;
     margin: 0 0 20px 0;
@@ -77,6 +82,7 @@ const StyledInputFrom = styled.input`
 
 const StyledInputTo = styled.input`
     width: 75vw;
+    max-width: 600px;
     background: #128DA1;
     border: none;
     margin: 0 0 10px 0;
@@ -90,12 +96,16 @@ const StyledInputTo = styled.input`
 
 const StyledAmountOfTravelersContainer = styled.div`
     width: 75vw;
+    max-width: 600px;
 `
 
 const StyledAmountOfTravelersTitle = styled.div`
     color: white;
-    font-size: 16px;
     margin-bottom: 4px;
+    > h5 {
+        margin-block-start: 0;
+        margin-block-end: 0;
+    }
 `
 
 const StyledAmountOfTravelers = styled.input`
@@ -128,8 +138,8 @@ const StyledNextButton = styled.button`
 `
 
 const StyledGreenJetReminder = styled.p`
-    max-width: 340px;
+    max-width: 500px;
     background: rgba(181, 228, 140, 0);
     font-size: 16px;
-    padding: 0 0 20px 0;
+    margin: 14px;
 `
